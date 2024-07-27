@@ -1,0 +1,14 @@
+.CompanyCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CompanyCardText{
+    color: black;
+    text-decoration: none;
+}
+
+.CompanyCardText:hover { 
+    color: rgb(14, 99, 173);
+  }
