@@ -28,7 +28,7 @@ const CompanyDetail = () => {
         }
 
         getCompanyDetail(params.handle)
-    }, [])
+    }, [params.handle])
 
 
     return (

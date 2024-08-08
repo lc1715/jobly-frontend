@@ -28,18 +28,16 @@ const JobsList = () => {
 
 
     useEffect(() => {
-        console.log('SecondUseEffectHookIsRunning')
-
         if (currentUser) {
             let obj = {}
 
-            currentUser.applications.map((jobId) => {
+            currentUser.applications.map((jobId) => (
                 obj[jobId] = true
-            })
+            ))
 
             setAppliedJobs(obj)
         }
-    }, [jobsArr])
+    }, [jobsArr, currentUser])
 
 
     //Function to filter out jobs
